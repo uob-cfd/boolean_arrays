@@ -41,16 +41,14 @@ test = {
         },
         {
           'code': r"""
-          >>> np.isclose(pct_profit[0], 113.365876)
-          True
+          >>> assert np.isclose(pct_profit[0], 113.365876)
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> np.allclose(pct_profit, (gross_earnings / budgets) * 100)
-          True
+          >>> assert np.allclose(pct_profit, (gross_earnings / budgets) * 100)
           """,
           'hidden': False,
           'locked': False

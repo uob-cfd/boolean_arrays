@@ -25,8 +25,7 @@ test = {
         },
         {
           'code': r"""
-          >>> isinstance(relative_loser_titles, np.ndarray)
-          True
+          >>> assert isinstance(relative_loser_titles, np.ndarray)
           """,
           'hidden': False,
           'locked': False
@@ -49,8 +48,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.all(relative_loser_titles == titles[pct_profit < 100])
-          True
+          >>> assert np.all(relative_loser_titles == titles[pct_profit < 100])
           """,
           'hidden': False,
           'locked': False

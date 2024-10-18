@@ -51,8 +51,7 @@ test = {
           'code': r"""
           >>> more_titles = my_titles.copy()
           >>> more_titles[pct_profit < 100] = 'Who cares?'
-          >>> np.all(my_titles == more_titles)
-          True
+          >>> assert np.all(my_titles == more_titles)
           """,
           'hidden': False,
           'locked': False

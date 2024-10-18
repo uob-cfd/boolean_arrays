@@ -49,16 +49,14 @@ test = {
         },
         {
           'code': r"""
-          >>> np.all(profit_gt_500[:3] == [False, True, False])
-          True
+          >>> assert np.all(profit_gt_500[:3] == [False, True, False])
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> np.all(profit_gt_500 == (pct_profit > 500))
-          True
+          >>> assert np.all(profit_gt_500 == (pct_profit > 500))
           """,
           'hidden': False,
           'locked': False

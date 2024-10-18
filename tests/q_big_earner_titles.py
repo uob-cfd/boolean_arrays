@@ -57,8 +57,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.all(big_earner_titles == titles[pct_profit > 500])
-          True
+          >>> assert np.all(big_earner_titles == titles[pct_profit > 500])
           """,
           'hidden': False,
           'locked': False
